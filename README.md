@@ -24,4 +24,4 @@
   Karya ini dilandasi oleh urgensi digitalisasi dan pemanfaatan teknologi informasi untuk mendukung sektor ramah lingkungan, sehingga sangat relevan dengan subtema kebangkitan teknologi transisi energi / pembangunan berkelanjutan. *(Catatan: Silakan sesuaikan lagi kalimat subtema ini dengan nama subtema asli di buku panduan perlombaan/tugas Anda).*
 
 ## Link Website 
-[Masukkan Link Deploy Website EBeTech Anda di Sini (misal: link Vercel/Netlify/GitHub Pages)]
+https://ebetech.web.id/
