@@ -1,7 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { Instagram, Linkedin } from "lucide-react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 import "../styles/Footer.css";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -33,51 +32,17 @@ const footerContent = {
 const Footer = () => {
   const { language } = useLanguage();
   const cData = footerContent[language];
-  const footerRef = useRef(null);
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    let ctx = gsap.matchMedia();
-
-    ctx.add("(min-width: 768px)", () => {
-      const q = gsap.utils.selector(footerRef);
-      const scroller = footerRef.current.closest('.plt-scroll-container') || window;
-      
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: footerRef.current,
-          scroller: scroller,
-          start: "top 95%",
-          toggleActions: "play none none reverse",
-        }
-      });
-
-      tl.fromTo(
-        q(".footer-fw-brand"),
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }
-      )
-      .fromTo(
-        q(".footer-fw-address"),
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
-        "-=0.6"
-      )
-      .fromTo(
-        q(".footer-fw-bottom"),
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
-        "-=0.6"
-      );
-    });
-
-    return () => ctx.revert();
-  }, []);
 
   return (
-    <footer ref={footerRef} className="footer-fullwidth">
+    <footer className="footer-fullwidth">
       <div className="footer-fw-top">
-        <div className="footer-fw-brand">
+        <motion.div 
+          className="footer-fw-brand"
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <h3 className="footer-fw-logo">
             <span className="text-accent">EBe</span>
             <span style={{ color: "#277398" }}>Tech</span>
@@ -98,10 +63,16 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-        </div>
+        </motion.div>
 
         <div className="footer-fw-right-side">
-          <div className="footer-fw-address">
+          <motion.div 
+            className="footer-fw-address"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
+          >
             <h4>{cData.addressTitle}</h4>
             <p>
               {cData.addressLines[0]}
@@ -110,14 +81,20 @@ const Footer = () => {
               <br />
               {cData.addressLines[2]}
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
 
-      <div className="footer-fw-bottom">
+      <motion.div 
+        className="footer-fw-bottom"
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+        viewport={{ once: true, amount: 0.1 }}
+      >
         <p>© 2026 EBeTech · Indonesia</p>
         <p>Created by EBeTech Team</p>
-      </div>
+      </motion.div>
     </footer>
   );
 };

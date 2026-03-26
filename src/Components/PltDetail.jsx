@@ -362,7 +362,7 @@ const PltDetail = ({ pltType, onClose, onOpenMap, isDark, toggleTheme }) => {
                         </>
                       )}
                       <th>{language === 'id' ? 'Koordinat' : 'Coordinates'}</th>
-                      {!data.title.startsWith('PLTAL') && <th>{language === 'id' ? 'Aksi' : 'Action'}</th>}
+                      <th>{language === 'id' ? 'Aksi' : 'Action'}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -422,17 +422,15 @@ const PltDetail = ({ pltType, onClose, onOpenMap, isDark, toggleTheme }) => {
                           <td data-label="Koordinat" style={{ fontFamily: 'monospace', fontSize: '0.85rem' }}>
                             <span className="td-val">{loc.lat && loc.lng ? `${loc.lat.toFixed(4)}, ${loc.lng.toFixed(4)}` : '-'}</span>
                           </td>
-                          {!data.title.startsWith('PLTAL') && (
-                            <td data-label={language === 'id' ? 'Aksi' : 'Action'}>
-                              {loc.lat && loc.lng ? (
-                                <button className="plt-lokasi-btn" onClick={() => handleScrollToLokasi(loc)}>
-                                  <MapPin size={16} /> <span>{language === 'id' ? 'Lihat Peta' : 'View Map'}</span>
-                                </button>
-                              ) : (
-                                <span className="no-coord-text">-</span>
-                              )}
-                            </td>
-                          )}
+                          <td data-label={language === 'id' ? 'Aksi' : 'Action'}>
+                            {loc.lat && loc.lng ? (
+                              <button className="plt-lokasi-btn" onClick={() => handleScrollToLokasi(loc)}>
+                                <MapPin size={16} /> <span>{language === 'id' ? 'Lihat Peta' : 'View Map'}</span>
+                              </button>
+                            ) : (
+                              <span className="no-coord-text">-</span>
+                            )}
+                          </td>
                         </tr>
                       );
                     })}

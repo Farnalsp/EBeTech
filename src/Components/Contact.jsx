@@ -13,9 +13,9 @@ const contactContent = {
     title: "Layanan Perhubungan ",
     desc: "Punya pertanyaan, proyek, atau keluhan? Tim kami siap merespons kebutuhan Anda secepat mungkin.",
     contacts: [
-      { name: "Farhan Alam Saputra", role: "Features, Functions & Website Issues", email: "farhan2331183@itpln.ac.id", wa: "+62 812-8484-7485", waLink: "https://wa.me/6281284847485" },
-      { name: "Rizal Wira Pambudi", role: "Partnership & Collaboration", email: "rizal2331175@itpln.ac.id", wa: "+62 821-7578-8221", waLink: "https://wa.me/6282175788221" },
-      { name: "Ahmad Izzulkamal", role: "Development Suggestions & Complaints", email: "ahmad2331217@itpln.ac.id", wa: "+62 859-6426-1231", waLink: "https://wa.me/6285964261231" },
+      { name: "Farhan Alam Saputra", role: "Pengembangan & Masalah Website", email: "farhan2331183@itpln.ac.id", wa: "+62 812-8484-7485", waLink: "https://wa.me/6281284847485" },
+      { name: "Rizal Wira Pambudi", role: "Kemitraan & Kolaborasi", email: "rizal2331175@itpln.ac.id", wa: "+62 821-7578-8221", waLink: "https://wa.me/6282175788221" },
+      { name: "Ahmad Izzulkamal", role: "Saran & Keluhan", email: "ahmad2331217@itpln.ac.id", wa: "+62 859-6426-1231", waLink: "https://wa.me/6285964261231" },
     ],
   },
   en: {
@@ -23,9 +23,9 @@ const contactContent = {
     title: "Communication Services ",
     desc: "Have any questions, projects, or complaints? Our team is ready to respond to your needs as quickly as possible.",
     contacts: [
-      { name: "Farhan Alam Saputra", role: "Features, Functions & Website Issues", email: "farhan2331183@itpln.ac.id", wa: "+62 812-8484-7485", waLink: "https://wa.me/6281284847485" },
+      { name: "Farhan Alam Saputra", role: "Development & Website Issues", email: "farhan2331183@itpln.ac.id", wa: "+62 812-8484-7485", waLink: "https://wa.me/6281284847485" },
       { name: "Rizal Wira Pambudi", role: "Partnership & Collaboration", email: "rizal2331175@itpln.ac.id", wa: "+62 821-7578-8221", waLink: "https://wa.me/6282175788221" },
-      { name: "Ahmad Izzulkamal", role: "Development Suggestions & Complaints", email: "ahmad2331217@itpln.ac.id", wa: "+62 859-6426-1231", waLink: "https://wa.me/6285964261231" },
+      { name: "Ahmad Izzulkamal", role: "Suggestions & Complaints", email: "ahmad2331217@itpln.ac.id", wa: "+62 859-6426-1231", waLink: "https://wa.me/6285964261231" },
     ],
   },
 };

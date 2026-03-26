@@ -3,7 +3,7 @@
 ## Institusi Teknologi Perusahaan Listrik Negara
 
 ## Anggota Tim 
-- **Ketua   :** farhan Alam Saputra 
+- **Ketua   :** Farhan Alam Saputra 
 - **Anggota 1:** Rizal Wira Pambudi
 - **Anggota 2:** Ahmad Izzulkamal
 
