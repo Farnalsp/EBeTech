@@ -15,7 +15,6 @@
 - **GSAP** — Animasi lanjutan berbasis timeline
 - **Leaflet** + **React Leaflet** — Peta interaktif lokasi EBT
 - **Lucide React** — Library ikon
-- **ESLint** — Linting & code quality
 
 ## Tampilan Beranda
 
@@ -23,22 +22,76 @@
 
 > Tampilan awal halaman **Beranda** saat website dijalankan. Halaman ini menyambut pengguna dengan antarmuka modern bertema energi terbarukan, dilengkapi dengan **6 kartu visual interaktif** di sisi kanan layar yang dapat **digeser dan diletakkan bebas** ke posisi mana saja sesuai keinginan pengguna — memberikan pengalaman eksplorasi yang personal dan dinamis.
 
-## Deskripsi Karya
+## 1. Deskripsi Proyek
 
-**EBeTech** (kependekan dari _Edukasi Bersama Energi Terbarukan Technology_) merupakan sebuah inovasi _platform_ edukasi digital tentang lingkungan berbasis website interaktif yang dirancang khusus sebagai wadah sentral untuk menyosialisasikan, memetakan, dan merintis pemahaman masyarakat luas terhadap pentingnya transisi energi di Indonesia.
+**EBeTech** *(Edukasi Bersama Energi Terbarukan Technology)* adalah sebuah platform edukasi digital inovatif yang dirancang khusus sebagai pusat informasi, advokasi, dan kolaborasi bagi **Generation Z** dalam mendukung transisi energi terbarukan (EBT) di Indonesia.
 
-- **Latar Belakang:**
-  Tingginya ketergantungan masyarakat dan industri terhadap bahan bakar fosil yang lambat laun memicu krisis iklim, berakar dari minimnya kesadaran kolektif serta sulitnya mengakses referensi yang mudah dipahami tentang potensi bersih Energi Baru Terbarukan (EBT) di Indonesia.
+Sesuai namanya, EBeTech mengusung semangat kolaborasi *(Edukasi Bersama)* yang dipadukan dengan pemanfaatan teknologi informasi modern *(Technology)* untuk menyajikan data ilmiah, kisah sukses nyata *(tangible success stories)*, serta fitur pemberdayaan praktis. Platform ini hadir untuk mengubah kesadaran lingkungan menjadi **aksi nyata** dan partisipasi politik yang bermakna bagi masa depan bumi.
 
-- **Tujuan:**
-  Membangun sebuah ensiklopedia energi terbarukan visual yang modern dan interaktif. Website ini menargetkan percepatan literasi publik dengan mengupas tuntas anatomi rinci, skema cara kerja, keunggulan, serta pemetaan geospasial proyek percontohan pembangkit listrik EBT (PLTA, PLTS, PLTB, PLTP, PLTBM, Biomassa, dll) di berbagai belahan pulau di nusantara.
+---
 
-- **Manfaat:**
-  Secara praktis, website ini dapat digunakan seketika oleh kalangan tenaga pendidik, mahasiswa, aparatur pemerintah, hingga masyarakat akar rumput sebagai basis data interaktif yang menyenangkan. Dilengkapi fitur _Glosarium EBT Pintar_ dan _Live Map Data Registration_, EBeTech memberikan asupan literasi yang dapat melahirkan calon-calon inovator lingkungan yang cerdas untuk mengawal masa depan Indonesia yang _Green_ dan _Sustainable_.
+## 2. Latar Belakang
 
-- **Pemilihan Subtema:**
-  Karya ini dilandasi oleh urgensi digitalisasi dan pemanfaatan teknologi informasi untuk mendukung sektor ramah lingkungan, sehingga sangat relevan dengan subtema kebangkitan teknologi transisi energi / pembangunan berkelanjutan. _(Catatan: Silakan sesuaikan lagi kalimat subtema ini dengan nama subtema asli di buku panduan perlombaan/tugas Anda)._
+Pengembangan platform ini didasarkan pada beberapa kondisi kritis:
 
-## Link Website
+- **Peran Strategis Gen Z** — Sebagai kelompok yang akan mendominasi populasi dan tenaga kerja, sikap Gen Z terhadap isu iklim akan menentukan keberhasilan transisi energi nasional.
 
-https://ebetech.web.id/
+- **Kesenjangan Edukasi & Informasi** — Adanya disparitas pengetahuan dan persepsi mengenai perubahan iklim di antara Gen Z di Jakarta, serta ancaman misinformasi yang dapat mengikis kepercayaan mereka.
+
+- **Hambatan Perilaku *(Perceived Behavioral Control)*** — Banyak anggota Gen Z yang merasa tidak berdaya secara finansial atau praktis untuk berkontribusi pada EBT karena kurangnya akses informasi mengenai kelayakan teknologi tersebut.
+
+- **Kebutuhan Independensi** — Karakteristik Gen Z yang kritis dan mandiri membutuhkan sumber informasi yang transparan dan berbasis data, bukan sekadar kampanye normatif dari lingkaran terdekat.
+
+---
+
+## 3. Tujuan
+
+Tujuan utama dari pengembangan platform ini adalah:
+
+- **Membangun Sikap Positif** — Membentuk *environmental awareness* sebagai pintu masuk utama untuk menciptakan sikap pro-transisi energi.
+
+- **Menyediakan Sumber Terpercaya** — Menjadi *single source of truth* untuk menangkal hoaks dan menyediakan data akurat mengenai isu iklim dan EBT.
+
+- **Meningkatkan Efikasi Diri** — Memberdayakan Gen Z dengan informasi praktis (biaya, teknologi, beasiswa) agar mereka merasa mampu terlibat secara personal.
+
+- **Mendorong Partisipasi Inklusif** — Menyediakan ruang bagi Gen Z untuk terlibat dalam pengambilan kebijakan melalui mekanisme partisipatori seperti forum atau *youth council*.
+
+---
+
+## 4. Manfaat
+
+- **Bagi Pemerintah** — Mendapatkan dukungan publik dan legitimasi politik untuk kebijakan transisi energi yang bersifat jangka panjang.
+
+- **Bagi Sektor Swasta** — Terbukanya peluang kewirausahaan hijau *(green start-ups)* dan tersedianya talenta lokal yang kompeten untuk mengelola infrastruktur EBT di masa depan.
+
+- **Bagi Gen Z** — Meningkatkan literasi finansial dan teknis terkait teknologi hijau, serta membuka akses ke peluang karir *(green jobs)* dan jaringan profesional.
+
+- **Bagi Lingkungan** — Mempercepat pengurangan emisi karbon melalui adopsi perilaku pro-lingkungan yang masif dan kolektif dari generasi muda.
+
+---
+
+## 5. Pemilihan Subtema: Lingkungan
+
+Pemilihan subtema ini didasarkan pada urgensi Keberlanjutan Nasional:
+
+- **Isu Eksistensial** — Perubahan iklim adalah ancaman nyata yang paling terdampak pada masa depan Gen Z.
+
+- **Katalis Perubahan** — Transisi energi bukan hanya soal teknologi, tetapi soal perubahan paradigma sosial. Memilih subtema ini berarti menyasar akar masalah lingkungan melalui sektor energi yang menyumbang emisi terbesar.
+
+- **Relevansi Geografis** — Jakarta, sebagai fokus studi, merupakan titik sentral aktivitas ekonomi yang sangat membutuhkan transformasi energi untuk mengatasi masalah polusi dan ketergantungan energi fosil.
+
+---
+
+## 📚 Referensi
+
+> **Sumber Riset :**
+> *Factors Influencing Generation Z's Pro-Environmental Behavior towards Indonesia's Energy Transition*
+> **Divine Ifransca Wijaya & Phimsupha Kokchang**
+> 📄 [https://www.mdpi.com/2071-1050/15/18/13485](https://www.mdpi.com/2071-1050/15/18/13485)
+
+---
+
+## 🔗 Link Website
+
+🌐 [https://ebetech.web.id/](https://ebetech.web.id/)
+
