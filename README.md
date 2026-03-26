@@ -24,61 +24,62 @@
 
 ## 1. Deskripsi Proyek
 
-**EBeTech** *(Edukasi Bersama Energi Terbarukan Technology)* adalah sebuah platform edukasi digital inovatif yang dirancang khusus sebagai pusat informasi, advokasi, dan kolaborasi bagi **Generation Z** dalam mendukung transisi energi terbarukan (EBT) di Indonesia.
+**EBeTech** *(Edukasi Bersama Energi Terbarukan Technology)* adalah sebuah platform edukasi digital inovatif yang dirancang khusus sebagai pusat informasi, advokasi, dan eksplorasi energi baru terbarukan (EBT) bagi **Generation Z** dan masyarakat luas dalam mendukung transisi energi di Indonesia.
 
-Sesuai namanya, EBeTech mengusung semangat kolaborasi *(Edukasi Bersama)* yang dipadukan dengan pemanfaatan teknologi informasi modern *(Technology)* untuk menyajikan data ilmiah, kisah sukses nyata *(tangible success stories)*, serta fitur pemberdayaan praktis. Platform ini hadir untuk mengubah kesadaran lingkungan menjadi **aksi nyata** dan partisipasi politik yang bermakna bagi masa depan bumi.
+Platform ini menghadirkan konten edukasi interaktif untuk setiap jenis pembangkit listrik terbarukan (PLTA, PLTS, PLTB, PLTP, PLTBm), dilengkapi **Registry Pembangkit EBT** berisi data teknis nyata, serta **Peta Geospasial Interaktif** yang menampilkan lokasi pembangkit di seluruh nusantara — bahkan hingga skala internasional.
 
----
 
 ## 2. Latar Belakang
 
-Pengembangan platform ini didasarkan pada beberapa kondisi kritis:
+Pengembangan EBeTech berangkat dari beberapa kondisi nyata yang ditemukan di lapangan:
 
-- **Peran Strategis Gen Z** — Sebagai kelompok yang akan mendominasi populasi dan tenaga kerja, sikap Gen Z terhadap isu iklim akan menentukan keberhasilan transisi energi nasional.
+- **Minimnya Media Edukasi EBT yang Menarik** — Informasi mengenai energi terbarukan mayoritas tersaji dalam format teks ilmiah yang sulit dipahami. EBeTech hadir dengan Edukasi dan ilustrasi cara kerja pembangkit yang mudah dicerna oleh semua kalangan.
 
-- **Kesenjangan Edukasi & Informasi** — Adanya disparitas pengetahuan dan persepsi mengenai perubahan iklim di antara Gen Z di Jakarta, serta ancaman misinformasi yang dapat mengikis kepercayaan mereka.
+- **Kesenjangan Data & Informasi yang Terfragmentasi** — Data pembangkit EBT di Indonesia tersebar di berbagai sumber yang tidak terintegrasi. EBeTech menjawabnya dengan **Registry EBT terpusat** yang memuat data kapasitas, lokasi, dan pengelola pembangkit secara terstruktur.
 
-- **Hambatan Perilaku *(Perceived Behavioral Control)*** — Banyak anggota Gen Z yang merasa tidak berdaya secara finansial atau praktis untuk berkontribusi pada EBT karena kurangnya akses informasi mengenai kelayakan teknologi tersebut.
+- **Hambatan Persepsi terhadap EBT *(Perceived Behavioral Control)*** — Banyak masyarakat, khususnya Gen Z, yang merasa EBT adalah hal yang jauh dan tidak terjangkau. Fitur **Peta Geospasial Interaktif** EBeTech memvisualisasikan keberadaan nyata pembangkit EBT di sekitar mereka, membangun rasa kedekatan dan keyakinan bahwa transisi energi sudah berjalan.
 
-- **Kebutuhan Independensi** — Karakteristik Gen Z yang kritis dan mandiri membutuhkan sumber informasi yang transparan dan berbasis data, bukan sekadar kampanye normatif dari lingkaran terdekat.
+- **Kebutuhan Sumber Informasi yang Independen & Terpercaya** — Gen Z yang kritis membutuhkan data berbasis fakta, bukan sekadar kampanye. EBeTech menyajikan informasi teknis yang transparan, termasuk koordinat lokasi, kapasitas aktual, dan tautan langsung ke peta real-time.
 
 ---
 
 ## 3. Tujuan
 
-Tujuan utama dari pengembangan platform ini adalah:
+Tujuan utama dari pengembangan platform EBeTech ini adalah, dan berikut relevansinya dengan fitur web yang dibangun:
 
-- **Membangun Sikap Positif** — Membentuk *environmental awareness* sebagai pintu masuk utama untuk menciptakan sikap pro-transisi energi.
+- **Membangun Kesadaran Energi Terbarukan** — Sesuai riset Wijaya & Kokchang (2023) bahwa *environmental awareness* adalah prediktor utama perilaku pro-EBT, EBeTech menghadirkan **halaman edukasi interaktif** dengan visualisasi 3D animasi untuk setiap jenis pembangkit (PLTA, PLTS, PLTB, PLTP, PLTBm, dll.) agar pengguna dapat memahami cara kerja EBT secara visual dan menyenangkan.
 
-- **Menyediakan Sumber Terpercaya** — Menjadi *single source of truth* untuk menangkal hoaks dan menyediakan data akurat mengenai isu iklim dan EBT.
+- **Menyediakan Data EBT yang Akurat & Terpercaya** — EBeTech menyajikan **Registry Pembangkit EBT** yang memuat data teknis nyata seperti kapasitas, lokasi, dan pengelola dari berbagai pembangkit listrik di seluruh Indonesia, menjadi rujukan berbasis data yang menangkal misinformasi.
 
-- **Meningkatkan Efikasi Diri** — Memberdayakan Gen Z dengan informasi praktis (biaya, teknologi, beasiswa) agar mereka merasa mampu terlibat secara personal.
+- **Meningkatkan Efikasi Diri Pengguna** — Riset menunjukkan bahwa *perceived behavioral control* sangat memengaruhi niat bertindak. EBeTech menjawab ini dengan **fitur Peta Interaktif (Leaflet)** yang menampilkan lokasi pembangkit secara geospasial, membuat pengguna merasa lebih dekat dan nyata dengan keberadaan teknologi EBT di sekitar mereka.
 
-- **Mendorong Partisipasi Inklusif** — Menyediakan ruang bagi Gen Z untuk terlibat dalam pengambilan kebijakan melalui mekanisme partisipatori seperti forum atau *youth council*.
+- **Memperluas Jangkauan Literasi Digital** — Platform ini dibangun dengan teknologi *mobile-responsive* dan mendukung **bilingual (Indonesia & Inggris)**, memastikan informasi EBT dapat diakses oleh kalangan seluas-luasnya, mulai dari pelajar hingga profesional.
 
 ---
 
 ## 4. Manfaat
 
-- **Bagi Pemerintah** — Mendapatkan dukungan publik dan legitimasi politik untuk kebijakan transisi energi yang bersifat jangka panjang.
+Manfaat EBeTech dikaitkan langsung dengan fitur-fitur yang tersedia di dalam platform:
 
-- **Bagi Sektor Swasta** — Terbukanya peluang kewirausahaan hijau *(green start-ups)* dan tersedianya talenta lokal yang kompeten untuk mengelola infrastruktur EBT di masa depan.
+- **Bagi Pelajar & Mahasiswa** — Dapat menggunakan **halaman edukasi EBT** sebagai sumber belajar mandiri, cara kerja, dan penjelasan teknis dari tiap jenis pembangkit listrik terbarukan.
 
-- **Bagi Gen Z** — Meningkatkan literasi finansial dan teknis terkait teknologi hijau, serta membuka akses ke peluang karir *(green jobs)* dan jaringan profesional.
+- **Bagi Peneliti & Tenaga Pendidik** — **Fitur Registry & Peta Interaktif** menyediakan data lokasi, kapasitas, dan pengelola pembangkit EBT di Indonesia secara visual dan geospasial sebagai bahan referensi dan studi lapangan.
 
-- **Bagi Lingkungan** — Mempercepat pengurangan emisi karbon melalui adopsi perilaku pro-lingkungan yang masif dan kolektif dari generasi muda.
+- **Bagi Masyarakat Umum & Gen Z** — Dengan tampilan modern, animasi transisi tema *wind turbine* dan *solar farm*, serta akses kontak langsung via WhatsApp dan Email, masyarakat dapat dengan mudah memahami dan mengajukan pertanyaan terkait EBT Dan Saran Pengembangan agar Generasi selanjutnya mengetahui perkembangan EBT tanpa hambatan teknis.
+
+- **Bagi Lingkungan & Kebijakan** — Semakin banyak pengguna yang teredukasi melalui EBeTech, semakin besar tekanan sosial (*social norm*) yang mendorong pengambil kebijakan untuk mengakselerasi transisi energi — sejalan dengan temuan bahwa norma sosial dan kesadaran lingkungan adalah dua faktor terkuat dalam membentuk perilaku pro-EBT.
 
 ---
 
 ## 5. Pemilihan Subtema: Lingkungan
 
-Pemilihan subtema ini didasarkan pada urgensi Keberlanjutan Nasional:
+Subtema **Lingkungan** dipilih karena relevansinya yang sangat langsung dengan konten dan fitur yang diimplementasikan dalam EBeTech:
 
-- **Isu Eksistensial** — Perubahan iklim adalah ancaman nyata yang paling terdampak pada masa depan Gen Z.
+- **Urgensi Iklim sebagai Motivasi Konten** — Seluruh konten EBeTech — mulai dari halaman edukasi PLTS, PLTB, PLTA, PLTP, PLTBm, hingga registry pembangkit — berfokus pada solusi energi yang secara langsung mengurangi emisi karbon. Ini menjawab temuan riset bahwa **kesadaran lingkungan** adalah faktor paling signifikan yang mendorong niat berperilaku pro-EBT *(Wijaya & Kokchang, 2023)*.
 
-- **Katalis Perubahan** — Transisi energi bukan hanya soal teknologi, tetapi soal perubahan paradigma sosial. Memilih subtema ini berarti menyasar akar masalah lingkungan melalui sektor energi yang menyumbang emisi terbesar.
+- **Teknologi sebagai Jembatan Edukasi Lingkungan** — EBeTech membuktikan bahwa teknologi web modern (React, Three.js, Framer Motion, Leaflet) dapat menjadi alat advokasi lingkungan yang efektif. Animasi 3D interaktif dan peta geospasial mengubah data teknis yang kering menjadi pengalaman visual yang menggugah kepedulian.
 
-- **Relevansi Geografis** — Jakarta, sebagai fokus studi, merupakan titik sentral aktivitas ekonomi yang sangat membutuhkan transformasi energi untuk mengatasi masalah polusi dan ketergantungan energi fosil.
+- **Skala Nasional, Dampak Lokal** — Fitur **Peta Lokasi EBT** menampilkan sebaran pembangkit listrik terbarukan dari Sabang sampai Merauke, membuktikan bahwa isu lingkungan ini bukan hanya relevan di kota besar seperti Jakarta, Surabaya, atau Semarang, tetapi merupakan agenda nasional yang menyentuh setiap wilayah di Indonesia bahkan Internasional.
 
 ---
 
