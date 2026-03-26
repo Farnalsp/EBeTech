@@ -1,0 +1,198 @@
+
+.theme-transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.overlay-dark {
+  background: #030712;
+}
+
+.overlay-light {
+  background: #f8fafc;
+}
+
+.ebt-theme-scene {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* ── SOLAR SCENE (Light Mode) ── */
+.solar-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ebt-sun {
+  position: absolute;
+  top: 60px;
+  width: 80px;
+  height: 80px;
+  background: #fbbf24;
+  border-radius: 50%;
+  box-shadow:
+    0 0 30px rgba(251, 191, 36, 0.6),
+    0 0 60px rgba(251, 191, 36, 0.3);
+  z-index: 1;
+}
+
+/* ── SOLAR FARM 3D SCENE (Light Mode) ── */
+.ebt-solar-farm {
+  position: absolute;
+  bottom: 0px;
+  width: 300px;
+  height: 120px;
+  z-index: 2;
+  perspective: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.solar-farm-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.solar-row {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  background: #1e3a8a;
+  border-top: 2px solid #94a3b8;
+  border-bottom: 2px solid #0f172a;
+  border-radius: 2px;
+  background-image: 
+    linear-gradient(to right, #60a5fa 2px, transparent 2px),
+    linear-gradient(to bottom, #60a5fa 1.5px, transparent 1.5px);
+  background-size: 50px 18px;
+  box-shadow: 
+    0 10px 15px rgba(0, 0, 0, 0.4),
+    inset 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+
+.solar-row::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-size: 50px 100%;
+  background-image: 
+    linear-gradient(to right, transparent 23px, #334155 23px, #334155 27px, transparent 27px);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+
+.row-1 { transform: translateZ(-200px) translateY(-50px) rotateX(55deg); width: 600px; z-index: 1; opacity: 0.5; }
+.row-2 { transform: translateZ(-130px) translateY(-35px) rotateX(48deg); width: 500px; z-index: 2; opacity: 0.7; }
+.row-3 { transform: translateZ(-60px) translateY(-20px) rotateX(40deg); width: 420px; z-index: 3; opacity: 0.85; }
+.row-4 { transform: translateZ(10px) translateY(-5px) rotateX(32deg); width: 340px; z-index: 4; opacity: 0.95; }
+.row-5 { transform: translateZ(80px) translateY(10px) rotateX(25deg); width: 260px; z-index: 5; opacity: 1; border-top-width: 3px; box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.2); }
+
+/* ── WIND SCENE (Dark Mode) ── */
+.wind-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ebt-moon {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 90px;
+  height: 90px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -15px 15px 0 0 #f1f5f9;
+  filter: drop-shadow(0 0 20px rgba(241, 245, 249, 0.4));
+  z-index: 1;
+}
+
+.ebt-turbine {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.ebt-t-tower {
+  width: 14px;
+  height: 150px;
+  background: linear-gradient(to right, #475569, #94a3b8);
+  border-radius: 6px 6px 0 0;
+  z-index: 1;
+}
+
+.ebt-t-rotor {
+  position: absolute;
+  top: -80px;
+  width: 160px;
+  height: 160px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ebt-t-center {
+  width: 20px;
+  height: 20px;
+  background: #f1f5f9;
+  border-radius: 50%;
+  z-index: 3;
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ebt-t-blade {
+  position: absolute;
+  width: 16px;
+  height: 80px;
+  background: #f8fafc;
+  border-radius: 50% 50% 4px 4px;
+  transform-origin: bottom center;
+  bottom: 50%;
+  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.blade1 {
+  transform: rotate(0deg);
+}
+
+.blade2 {
+  transform: rotate(120deg);
+}
+
+.blade3 {
+  transform: rotate(240deg);
+}

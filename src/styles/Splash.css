@@ -1,0 +1,149 @@
+
+
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  background: #080d16;
+  
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  
+  width: 100%;
+}
+
+/* ── Panel Surya & Matahari ── */
+.splash-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding-top: 40px;
+  
+  margin-bottom: 0;
+}
+
+.splash-sun {
+  position: absolute;
+  top: -10px;
+  right: -30px;
+  z-index: 1;
+  filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.4));
+}
+
+.splash-panel-wrap {
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 20px 30px rgba(16, 185, 129, 0.2));
+}
+
+/* ── Baterai & Indikator ── */
+.splash-battery-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.splash-battery-body {
+  position: relative;
+  width: 80px;
+  height: 32px;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  padding: 3px;
+  display: flex;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.splash-battery-cap {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 14px;
+  background: #334155;
+  border-radius: 0 4px 4px 0;
+}
+
+.splash-battery-fill {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(90deg, #059669, #76A557);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+}
+
+.splash-charging-icon {
+  animation: pulse-charge 1.5s infinite alternate;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-charge {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* ── Teks ── */
+.splash-progress-text {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #f8fafc;
+  letter-spacing: 2px;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+}
+
+.splash-progress-text span {
+  background: linear-gradient(90deg, #34d399, #76A557);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.splash-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: pulse-text 2s infinite ease-in-out;
+}
+
+@keyframes pulse-text {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

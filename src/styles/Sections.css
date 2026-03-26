@@ -1,0 +1,104 @@
+
+
+/* ── Shared variables ──────────────────────────────── */
+:root {
+  --section-pad:    120px 2rem;
+  --section-pad-sm: 80px 1.5rem;
+  --card-radius:    20px;
+  --transition-md:  0.3s ease;
+}
+
+
+body, .section, .navbar, .nav-link, .nav-logo, h1, h2, h3, h4, p, span {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+/* ── Base section ──────────────────────────────────── */
+.section {
+  position: relative;
+  padding: var(--section-pad);
+  background: linear-gradient(160deg, rgba(118,165,87,0.08) 0%, rgba(39,115,152,0.06) 50%, rgba(16,185,129,0.05) 100%), #f8fafc;
+  overflow: hidden;
+}
+
+.section--dark {
+  background: linear-gradient(160deg, rgba(118,165,87,0.12) 0%, rgba(39,115,152,0.10) 50%, rgba(16,185,129,0.08) 100%), #030712;
+  color: #f1f5f9;
+}
+
+.section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.section-inner--col {
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(16,185,129,0.1);
+  border: 1px solid rgba(16,185,129,0.25);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #059669;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.section--dark .section-badge {
+  background: rgba(16,185,129,0.12);
+  color: #34d399;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #0f172a;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.section--dark .section-title { color: #f8fafc; }
+.section-title--center { text-align: center; }
+
+.section-desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #475569;
+  max-width: 520px;
+  margin: 0;
+}
+.section--dark .section-desc { color: #94a3b8; }
+.section-desc--center { text-align: center; margin: 0 auto; }
+
+.text-accent { color: #76A557; }
+
+
+
+@media (max-width: 900px) {
+  .section { padding: var(--section-pad-sm); }
+  .section-inner { grid-template-columns: 1fr; gap: 3rem; }
+}

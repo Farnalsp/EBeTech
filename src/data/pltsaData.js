@@ -1,0 +1,98 @@
+export const pltsaData = {
+  id: {
+    title: "PLTSa (Pembangkit Listrik Tenaga Sampah / Waste to Energy)",
+    heroTitle: "Termal Massa: Reduksi Limbah Perkotaan",
+    heroDesc: "Sistem konversi termal terintegrasi untuk memusnahkan volume residu TPA secara masif dan menghasilkan daya listrik baseload.",
+    definition:
+      "Pembangkit Listrik Tenaga Sampah (PLTSa) adalah infrastruktur pengolahan limbah padat perkotaan yang memanfaatkan panas hasil pembakaran (insinerasi) untuk menghasilkan uap dan menggerakkan turbin listrik. Fokus utamanya adalah pemusnahan sampah secara higienis dan cepat.",
+    caraKerja: {
+      text: "PLTSa menggunakan teknologi insinerasi suhu tinggi untuk mengekstraksi energi panas dari sampah kering guna memutar generator uap.",
+      extended: [
+        "1. Penanganan Material (Feedstock): Sampah dari truk pengangkut ditampung di bunker kedap udara. Proses pemilahan memisahkan material non-combustible (logam/kaca) untuk menghasilkan RDF (Refuse Derived Fuel) dengan nilai kalor yang konsisten.",
+        "2. Insinerasi Terkontrol: Sampah diumpankan ke dalam tungku pembakar (grate incinerator). Suhu dijaga ketat di atas 850°C untuk memastikan pemusnahan total mikroorganisme dan pemutusan rantai senyawa toksik (dioksin).",
+        "3. Pembangkitan Uap Superheated: Energi panas dari gas buang dialirkan ke unit heat exchanger pada boiler. Air demineralisasi di dalam pipa boiler berubah menjadi uap kering bertekanan tinggi.",
+        "4. Ekspansi Turbin: Uap bertekanan tinggi dilepaskan untuk memutar sudu-sudu turbin uap. Energi mekanis dari poros turbin kemudian dikonversi oleh generator menjadi energi listrik.",
+        "5. Pembersihan Gas Buang (Flue Gas Treatment): Gas sisa pembakaran melewati reaktor kimia untuk netralisasi asam dan filter kain (bag filter) untuk menangkap partikulat debu halus sebelum dilepaskan melalui cerobong.",
+        "6. Solid Waste Management: Residu pembakaran berupa abu berat (bottom ash) dan abu terbang (fly ash) dikelola sebagai limbah B3 atau distabilisasi untuk bahan baku infrastruktur sekunder.",
+      ],
+      img: "https://zonaebt.com/wp-content/uploads/Proses-PLTSa-1920x1355.jpg",
+    },
+    pros: [
+      "Reduksi volume sampah di TPA hingga 90% secara instan.",
+      "Stabilitas suplai listrik (Baseload) karena tidak tergantung cuaca.",
+      "Memutus rantai penyebaran penyakit dari tumpukan sampah terbuka.",
+      "Efisiensi logistik pengelolaan sampah kota.",
+    ],
+    cons: ["Kebutuhan investasi awal (CAPEX) yang sangat besar.", "Ketergantungan pada teknologi filter emisi yang mahal.", "Menghasilkan residu abu yang dikategorikan sebagai limbah B3."],
+    benefits: ["Mitigasi gas metana (gas rumah kaca) dari pembusukan alami di TPA.", "Pemanfaatan kembali residu abu untuk material konstruksi.", "Kemandirian energi berbasis pengolahan limbah lokal."],
+    impacts: ["Risiko kontaminasi udara jika sistem kontrol suhu pembakaran gagal.", "Penolakan sosial akibat kekhawatiran polusi cerobong di area padat penduduk."],
+    history:
+      "Sejarah Pembangkit Listrik Tenaga Sampah (PLTSa) di Indonesia bermula sebagai respons atas darurat sampah nasional, terutama pasca tragedi longsor TPA Leuwigajah tahun 2005. Pada era Presiden Susilo Bambang Yudhoyono, fokus utama pemerintah masih berada pada tahap penguatan regulasi melalui UU No. 18 Tahun 2008 dan riset teknologi skala kecil. Saat itu, anggaran belum menyentuh angka triliunan karena proyek masih bersifat pilot atau percontohan yang didanai melalui skema hibah riset APBN dalam jumlah terbatas.\n\nTransisi besar terjadi pada era Presiden Joko Widodo, di mana PLTSa dijadikan Proyek Strategis Nasional (PSN) melalui Perpres No. 35 Tahun 2018. Era ini menandai beroperasinya PLTSa skala industri pertama di Indonesia, yaitu PLTSa Benowo di Surabaya dengan nilai investasi sekitar Rp700 miliar dan PLTSa Merah Putih di Bantargebang dengan anggaran APBN sekitar Rp98 miliar. Pemerintah mulai memperkenalkan skema Kerja Sama Pemerintah dan Badan Usaha (KPBU) untuk menarik investasi swasta, mengingat besarnya biaya pembangunan yang bisa mencapai ratusan miliar hingga triliunan rupiah per unit.\n\nMemasuki era Presiden Prabowo Subianto, visi pengelolaan sampah beralih ke ekspansi masif dengan target pembangunan di 33 hingga 34 lokasi baru di seluruh Indonesia. Melalui Perpres No. 109 Tahun 2025, proyek ini kini didorong melalui Badan Pengelola Investasi Danantara untuk menjaring modal global yang lebih besar. Anggaran yang dibutuhkan pun melonjak drastis; untuk satu unit PLTSa skala besar di kota metropolitan seperti Jakarta, estimasi nilai investasinya kini bisa menembus angka Rp6 triliun, yang didukung oleh kepastian tarif jual listrik ke PLN guna menjaga keberlangsungan proyek jangka panjang.",
+    locations: [
+      { name: "PLTSa Benowo", prov: "Surabaya, Jawa Timur", cap: "9 - 11 MW", status: "Aktif ", lat: -7.218359, lng: 112.626379 },
+      { name: "PLTSa Putri Cempo", prov: "Surakarta, Jawa Tengah", cap: "5 MW", status: "Aktif ", lat: -7.535929, lng: 110.854965 },
+      { name: "PLTSa Merah Putih Bantargebang", prov: "Bekasi, Jawa Barat", cap: "0.7 MW", status: "Riset", lat: -6.351211, lng: 106.997716 },
+      { name: "PLTSa Jatibarang", prov: "Semarang, Jawa Tengah", cap: "~1.3 MW", status: "Riset", lat: -7.022182, lng: 110.358838 },
+      { name: "PLTSa Legok Nangka", prov: "Bandung Raya, Jawa Barat", cap: "~40 MW", status: "Pengembangan", lat: null, lng: null },
+      { name: "ITF Sunter", prov: "DKI Jakarta", cap: "~35 MW", status: "Evaluasi Perencanaan", lat: null, lng: null },
+      { name: "PLTSa Suwung", prov: "Denpasar, Bali", cap: "~20 MW", status: "Evaluasi Perencanaan", lat: null, lng: null },
+      { name: "PLTSa Cipeucang", prov: "Tangerang Selatan, Banten", cap: "~15 MW", status: "Tahap Kelayakan", lat: null, lng: null },
+    ],
+    glossary: [
+      { term: "Insinerator", desc: "Reaktor termal suhu tinggi yang dirancang untuk membakar limbah padat secara efisien." },
+      { term: "RDF (Refuse Derived Fuel)", desc: "Sampah yang telah diproses dan dipilah sehingga memiliki nilai kalor yang stabil sebagai bahan bakar." },
+      { term: "Dioksin", desc: "Senyawa kimia berbahaya yang muncul jika pembakaran sampah tidak mencapai suhu minimal standar (850°C)." },
+      { term: "APC (Air Pollution Control)", desc: "Rangkaian unit filter dan reaktor kimia untuk menyaring polutan dari gas buang pembakaran." },
+      { term: "Baseload", desc: "Kemampuan pembangkit untuk menyuplai listrik secara kontinu selama 24 jam penuh." },
+      { term: "Fly Ash & Bottom Ash", desc: "Residu abu hasil pembakaran; fly ash adalah abu halus yang terbawa gas, bottom ash adalah abu berat di dasar tungku." },
+    ],
+  },
+  en: {
+    title: "PLTSa (Waste to Energy / WTE)",
+    heroTitle: "Thermal Mass: Urban Waste Reduction",
+    heroDesc: "Integrated thermal conversion system for massive landfill residue destruction and baseload power generation.",
+    definition:
+      "A Waste-to-Energy (WTE) Power Plant is a municipal solid waste management infrastructure that utilizes combustion heat (incineration) to produce steam and drive electrical turbines. Its primary focus is the hygienic and rapid destruction of waste.",
+    caraKerja: {
+      text: "PLTSa employs high-temperature incineration technology to extract thermal energy from dry waste to drive steam generators.",
+      extended: [
+        "1. Feedstock Handling: Waste from collection trucks is stored in airtight bunkers. Sorting processes separate non-combustibles (metal/glass) to produce RDF with consistent caloric value.",
+        "2. Controlled Incineration: Waste is fed into a grate incinerator. Temperatures are strictly maintained above 850°C to ensure total destruction of pathogens and breakdown of toxic compounds (dioxins).",
+        "3. Superheated Steam Generation: Thermal energy from flue gas is directed to the boiler's heat exchanger. Demineralized water in the boiler pipes turns into high-pressure dry steam.",
+        "4. Turbine Expansion: High-pressure steam is released to rotate the steam turbine blades. Mechanical energy from the turbine shaft is then converted by the generator into electricity.",
+        "5. Flue Gas Treatment: Combustion exhaust passes through chemical reactors for acid neutralization and bag filters to capture fine dust particulates before release via the stack.",
+        "6. Solid Waste Management: Combustion residues, consisting of bottom ash and fly ash, are managed as hazardous waste (B3) or stabilized for secondary infrastructure materials.",
+      ],
+      img: "https://zonaebt.com/wp-content/uploads/Proses-PLTSa-1920x1355.jpg",
+    },
+    pros: [
+      "Instant reduction of landfill waste volume by up to 90%.",
+      "Stable electricity supply (Baseload) regardless of weather conditions.",
+      "Breaks the chain of disease spread from open waste piles.",
+      "Optimizes urban waste management logistics.",
+    ],
+    cons: ["Requires massive initial investment (CAPEX).", "Dependency on expensive emission filtration technology.", "Produces ash residue categorized as hazardous waste (B3)."],
+    benefits: ["Mitigates methane gas (greenhouse gas) from natural decomposition in landfills.", "Reuse of ash residue for construction materials.", "Energy independence based on local waste processing."],
+    impacts: ["Risk of air contamination if the combustion temperature control system fails.", "Social opposition due to concerns over stack pollution in densely populated areas."],
+    history:
+      "The overarching historical genesis detailing Waste-to-Energy Power Plants (PLTSa) spanning Indonesia originated decisively mirroring urgent cascading national garbage emergencies profoundly echoing immediately post-lethal tragically disastrous Leuwigajah Landfill avalanche roughly 2005. During President Susilo Bambang Yudhoyono's tenure, sweeping governmental focuses predominantly centralized essentially heavily fortifying strict legislative foundations initiating via Law No. 18 / 2008 alongside microscopic scale technology pilot research implementations aggressively. Concurrently, budgets hardly eclipsed towering trillion thresholds strictly due mostly addressing solely miniature APBN research grants extremely strictly constrained exclusively.\n\nAstronomical fundamental transitions ultimately exploded spanning President Joko Widodo's tenure vehemently decreeing aggressively elevating PLTSa ascending achieving profound National Strategic Project (PSN) classification via Presidential Decree No. 35 / 2018. This pivotal monumental era robustly inaugurated sprawling deeply operational heavy industrial-scale WTE fortresses spanning Indonesia aggressively, highlighting proudly Benowo WTE encompassing Surabaya grabbing investments roughly Rp700 billion parallel alongside Merah Putih WTE sprawling Bantargebang gobbling approximately Rp98 billion APBN grants heavily. Rapidly, ministries heavily started aggressively pioneering Public-Private Partnership (KPBU) frameworks boldly enticing enormous foreign private sector financial magnets desperately acknowledging colossal crippling development costs commonly comfortably skyrocketing breaching hundreds billions approaching sweeping trillions strictly financing singular units completely.\n\nEntering President Prabowo Subianto's ambitious administration profoundly, sweeping waste management focal visions aggressively heavily aggressively pivoted directly violently accelerating massive sprawling expansive targets charting constructing fiercely completely roughly 33 until 34 absolute pristine virgin locales wildly sprawling nationwide. Propelling brutally through Presidential Decree No. 109 / 2025 heavily aggressively, these behemoth endeavors fiercely currently fundamentally vehemently accelerated radically navigating aggressively leveraging Danantara sprawling Investment Management Agencies boldly snaring incredibly massive mammoth global offshore capitals directly. Projected required sprawling budgets violently skyrocketed astronomically absolutely staggeringly drastically; boldly strictly estimating solely one monumental singular sprawling metropolitan WTE stronghold embracing colossal sprawling mega-cities identical identically directly comparing explicitly directly Jakarta explicitly, violently estimates current absolute investment appraisals violently breaching staggeringly aggressively roughly Rp6 trillion heavily aggressively, deeply profoundly firmly absolutely aggressively heavily strongly absolutely rigorously backed permanently ensuring deeply cemented highly lucrative electricity sale tariff promises fiercely guarding safeguarding robustly heavily strictly profoundly incredibly lengthy monumental long-term sweeping operational durabilities aggressively strictly totally.",
+    locations: [
+      { name: "PLTSa Benowo", prov: "Surabaya, East Java", cap: "9 - 11 MW", status: "Active", lat: -7.218359, lng: 112.626379 },
+      { name: "PLTSa Putri Cempo", prov: "Surakarta, Central Java", cap: "5 MW", status: "Active", lat: -7.535929, lng: 110.854965 },
+      { name: "PLTSa Merah Putih Bantargebang", prov: "Bekasi, West Java", cap: "0.7 MW", status: "Research", lat: -6.351211, lng: 106.997716 },
+      { name: "PLTSa Jatibarang", prov: "Semarang, Central Java", cap: "~1.3 MW", status: "Research", lat: -7.022182, lng: 110.358838 },
+      { name: "PLTSa Legok Nangka", prov: "Bandung Raya, West Java", cap: "~40 MW", status: "Construction", lat: null, lng: null },
+      { name: "ITF Sunter", prov: "DKI Jakarta", cap: "~35 MW", status: "Planning Evaluation", lat: null, lng: null },
+      { name: "PLTSa Suwung", prov: "Denpasar, Bali", cap: "~20 MW", status: "Planning Evaluation", lat: null, lng: null },
+      { name: "PLTSa Cipeucang", prov: "Tangerang Selatan, Banten", cap: "~15 MW", status: "Planning", lat: null, lng: null },
+    ],
+    glossary: [
+      { term: "Incinerator", desc: "A high-temperature thermal reactor designed to burn solid waste efficiently." },
+      { term: "RDF (Refuse Derived Fuel)", desc: "Processed and sorted waste with a stable caloric value for use as fuel." },
+      { term: "Dioxins", desc: "Dangerous chemical compounds that form if waste combustion does not reach the minimum standard temperature (850°C)." },
+      { term: "APC (Air Pollution Control)", desc: "A series of filter units and chemical reactors to remove pollutants from combustion flue gas." },
+      { term: "Baseload", desc: "The capability of a power plant to provide a continuous electricity supply 24/7." },
+      { term: "Fly Ash & Bottom Ash", desc: "Combustion ash residues; fly ash is fine dust carried by gas, while bottom ash is heavy residue at the furnace base." },
+    ],
+  },
+};

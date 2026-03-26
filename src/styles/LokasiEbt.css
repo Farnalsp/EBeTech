@@ -1,0 +1,253 @@
+/* =========================================================================
+   LOKASI EBT (MAP SECTION OVERLAY)
+   ========================================================================= */
+
+.lokasi-detail-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #ffffff;
+  color: #1e293b;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+}
+
+.lokasi-detail-overlay--dark {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+
+.lokasi-detail-nav {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lokasi-btn-circle {
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1e293b;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lokasi-btn-circle:hover {
+  background: rgba(14, 165, 233, 0.1);
+  border-color: #0ea5e9;
+  color: #0ea5e9;
+  transform: scale(1.05);
+}
+
+.lokasi-btn-back {
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1e293b;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lokasi-btn-back:hover {
+  background: rgba(14, 165, 233, 0.1);
+  border-color: #0ea5e9;
+  color: #0ea5e9;
+  transform: translateX(-4px);
+}
+
+
+.lokasi-detail-overlay--dark .lokasi-btn-circle,
+.lokasi-detail-overlay--dark .lokasi-btn-back {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.lokasi-detail-overlay--dark .lokasi-btn-circle:hover,
+.lokasi-detail-overlay--dark .lokasi-btn-back:hover {
+  background: rgba(14, 165, 233, 0.8);
+  border-color: #0ea5e9;
+  color: white;
+}
+
+
+.lokasi-scroll-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+
+.leaflet-map-wrapper {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  margin-top: 0;
+}
+
+.lokasi-detail-overlay--dark .leaflet-map-wrapper {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.leaflet-custom-map {
+  height: 60vh;
+  min-height: 500px;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.custom-leaflet-icon {
+  background: transparent;
+  border: none;
+}
+
+.custom-pin-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.lokasi-cat-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.75rem;
+  justify-content: center;
+}
+
+.lokasi-tab-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 99px;
+  border: 1px solid #cbd5e1;
+  background: transparent;
+  color: #475569;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lokasi-detail-overlay--dark .lokasi-tab-btn {
+  border-color: #475569;
+  color: #cbd5e1;
+}
+
+.lokasi-tab-btn:hover {
+  background: #f1f5f9;
+  color: #0ea5e9;
+  border-color: #0ea5e9;
+}
+
+.lokasi-detail-overlay--dark .lokasi-tab-btn:hover {
+  background: #1e293b;
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+.lokasi-tab-btn.active {
+  background: #0ea5e9;
+  color: white;
+  border-color: #0ea5e9;
+}
+
+.lokasi-detail-overlay--dark .lokasi-tab-btn.active {
+  background: #38bdf8;
+  color: white;
+  border-color: #38bdf8;
+}
+
+.lokasi-history-container {
+  margin-top: 5px;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #277398 0%, #76A557 100%);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 
+    0 20px 40px -10px rgba(39, 115, 152, 0.3),
+    0 10px 15px -5px rgba(0,0,0,0.05),
+    inset 0 2px 5px rgba(255,255,255,0.15);
+  transform: perspective(1000px) rotateX(5deg) scale(0.98);
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(10px);
+  position: relative;
+  color: #ffffff;
+}
+
+.lokasi-history-container:hover {
+  transform: perspective(1000px) rotateX(0deg) scale(1) translateY(-8px);
+  box-shadow: 
+    0 30px 50px -15px rgba(39, 115, 152, 0.35),
+    0 15px 25px -5px rgba(0,0,0,0.1),
+    inset 0 2px 10px rgba(255,255,255,0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.lokasi-detail-overlay--dark .lokasi-history-container {
+  background: linear-gradient(135deg, #1e5a74 0%, #4d7a38 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 20px 40px -10px rgba(0,0,0,0.4),
+    0 10px 15px -5px rgba(0,0,0,0.2),
+    inset 0 1px 3px rgba(255,255,255,0.05);
+  color: #ffffff;
+}
+
+.lokasi-detail-overlay--dark .lokasi-history-container:hover {
+  box-shadow: 
+    0 30px 50px -15px rgba(39, 115, 152, 0.4),
+    0 15px 25px -5px rgba(0,0,0,0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.lokasi-history-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.lokasi-detail-overlay--dark .lokasi-history-title {
+  color: #ffffff;
+}
+
+.lokasi-history-text {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  white-space: pre-line;
+}
+
+.lokasi-region-toggle { display: flex; justify-content: center; gap: 1rem; margin-bottom: 0; flex-wrap: wrap; }
+.region-btn { padding: 0.6rem 1.5rem; border-radius: 50px; border: 1px solid #cbd5e1; background: transparent; color: #475569; cursor: pointer; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem; }
+.lokasi-detail-overlay--dark .region-btn { border-color: #475569; color: #cbd5e1; }
+.region-btn:hover { background: #f1f5f9; }
+.lokasi-detail-overlay--dark .region-btn:hover { background: #1e293b; }
+.region-btn.active { background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%); color: white; border-color: transparent; box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3); }
+.lokasi-detail-overlay--dark .region-btn.active { background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%); box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3); }
+
+
+.leaflet-control-attribution { display: none !important; }
+
+
+

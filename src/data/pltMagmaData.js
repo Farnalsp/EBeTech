@@ -1,0 +1,107 @@
+export const pltMagmaData = {
+  region: "intl",
+  id: {
+    title: "PLT Enhanced Geothermal System",
+    heroTitle: "Energi Panas Bumi Rekayasa Ultra-Dalam",
+    heroDesc: "Memperluas pemanfaatan energi panas bumi pada batuan kering melalui teknik stimulasi hidrolik yang aman dan berkelanjutan.",
+    definition:
+      "PLT Enhanced Geothermal System adalah sistem PLT yang menghasilkan listrik panas bumi tanpa sumber yang hidrotermal konvektif. Jika PLTP (Pembangkit Listrik Terbarukan Panas Bumi) konvensional mengambil energinya dari panas, air, dan batu yang mengalami permeabilitas cukup untuk bisa diekstraksi, EGS justru menyasar sebagian besar energi panas bumi yang berada di batuan kering dan kedap air dalam jangkauan teknik konvensional. Teknologi EGS secara revolusioner memperluas ketersediaan sumber daya ini melalui metode stimulasi khusus, seperti 'stimulasi hidrolik'.",
+    caraKerja: {
+      text: "PLT EGS merupakan sumber daya beban dasar yang mampu memproduksi daya pada tingkat yang konstan secara berkelanjutan. Berbeda dengan sistem hidrotermal, teknologi EGS dinilai layak untuk diimplementasikan di berbagai lokasi di dunia, bergantung pada kedalaman sumber dayanya. Titik lokasi yang ideal umumnya berupa batuan granit dalam yang diselimuti oleh lapisan sedimen isolasi setebal 3–5 kilometer (1,9–3,1 mil) guna meminimalisir pelepasan panas.",
+      extended: [
+        "Tahap awal pemanfaatan melibatkan skema pengeboran ultra-dalam. Berdasarkan pemetaan isometrik skala, instalasi di permukaan yang membentang lebar 500-1000m terhubung dengan poros sumur ganda yang dieksplorasi menembus kedalaman 4000-6000m hingga mencapai target batuan dasar panas absolut.",
+        "Berbeda dengan energi geotermal hidrotermal biasa (yang mengambil pasokan uap dari kantung aquifer air alami yang terkubur dangkal), EGS beroperasi dengan menembus langsung lapisan impermeabel solid (Impermeable Bedrock) jauh di bawah bumi mendekati lempeng sumber magma, dimana panas tersimpan pada batuan kering tanpa air.",
+        "Pada gambar Enhanced Geothermal System (EGS) konvensional, air bersuhu dingin dipaksa masuk melalui sumur injeksi (pipa biru) dengan tekanan luar biasa untuk meretakkan struktur batuan kering secara buatan (terlihat dari pola rekahan abu-abu). Air meresap menyerap suhu menyengat batuan sebelum dipompa kembali naik lewat sumur produksi (pipa merah).",
+        "Sebaliknya pada variasi Closed-Loop Geothermal Systems, sistem menggunakan satu kesatuan pipa utuh tertutup berbentuk U. Fluida kerja bersirkulasi rapi di dalam sirkuit pipa baja tanpa pernah meretakkan atau menyentuh batuan secara fisik sama sekali, murni menyerap rambatan panas secara konduktif murni menyerupai radiator bawah tanah raksasa.",
+      ],
+      img: [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/EGS_diagram.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c4/Geothermal_energy_methods.png",
+        "https://www.energy.gov/sites/default/files/2025-12/EGS%20w%20Heading.jpg",
+        "https://www.energy.gov/sites/default/files/2025-12/Closed%20Loop%20w%20Heading.jpg",
+      ],
+    },
+    pros: [
+      "Memiliki emisi karbon atau gas rumah kaca yang sangat rendah karena fluida yang dipanaskan murni tidak terpapar bebas ke atmosfer.",
+      "Sebagian besar infrastruktur PLTP EGS dibangun dan berada murni di bawah tanah, membuat penggunaan lahan PLTP EGS lebih minimalis dan efisien tempat.",
+      "Infrastruktur PLTP EGS terbukti tidak membahayakan populasi dan ekosistem hewan liar di sekitarnya.",
+      "Pada PLTP EGS air dapat disirkulasikan secara terus menerus, lebih baik dari PLTS CSP yang terpaksa mengkonsumsi air dalam jumlah masif tanpa sirkulasi uap.",
+      "Memiliki utilitas kapasitas produksi listrik raksasa yang sangat absolut, berpotensi hingga menyentuh ribuan MW. Ia juga bisa berjalan stabil 24 jam penuh tanpa bergantung cuaca cuaca.",
+      "Biaya operasional mesin secara signifikan jauh lebih rendah pasca-instalasi awal dibandingkan pembangkit lainnya.",
+    ],
+    cons: [
+      "Secara teknikal ESG mengharuskan para insinyur menyuntikkan air bertekanan sangat ekstrem ke rekahan dasar bebatuan, jika ini sama sekali dilakukan tanpa manajemen dan pengawasan resiko tinggi, dapat memicu rentetan gempa induksi lokal.",
+      'Risiko fatal seperti "Kegagalan Sumur (Well Failure)", di mana resapan air bertekanan tinggi menghilang atau bocor menyebar jauh ke arah yang salah di dalam mantel bumi sehingga gagal kembali naik ke sumur alat produksi dengan kapasitas volume yang cukup.',
+      "Kandungan kimiawi mineral organik dapat tercampur fatal dengan volume sirkulasi air yang disemburkan oleh PLT, memicu efek turunnya dan rusaknya kualitas mineral geologi dasar secara perlahan.",
+      "Untuk siklus pada sesi instalasi awalnya saja pastinya mutlak memerlukan alokasi penyediaan pasokan volume mata air yang sangat teramat masif.",
+    ],
+    benefits: ["Eksploitasi dapat dikerjakan secara eksponensial di lokasi manapun tanpa hambatan geografis gunung berapi konvensional."],
+    impacts: ["Gempa minor frekuensi harian acap kali dikhawatirkan warga apabila pembangkit tersebut meresahkan pijakan dataran lempeng peradaban sipil di area terisoliasi."],
+    locations: [
+      { name: "United Downs Deep Geothermal Power (Redruth)", prov: "Redruth, Cornwall, UK", cap: "3 MW", lat: 50.231, lng: -5.207, status: "Aktif" },
+      { name: "Eden Geothermal Project (St Austell)", prov: "Eden Project, Bodelva, St Austell, Cornwall, UK", cap: "4.5 MW", lat: 50.354, lng: -4.745, status: "Aktif" },
+      { name: "Qiabuqia EGS Project", prov: "Gonghe County, Qinghai Province, China", cap: "1 MW", lat: 36.56, lng: 100.56, status: "Aktif" },
+      { name: "Vendenheim Geothermal Power Plant", prov: "Vendenheim, Grand Est, France", cap: "4.5 MW", lat: 48.667, lng: 7.747, status: "Aktif" },
+      { name: "Utah FORGE (EGS Research)", prov: "Milford, Utah, USA", cap: "1 MW", lat: 38.49, lng: -113.161, status: "Aktif" },
+      { name: "Coso EGS Pilot Project", prov: "Coso Hot Springs, California, USA", cap: "< 1 MW", lat: 36.027, lng: -117.809, status: "Aktif" },
+    ],
+    glossary: [
+      { term: "EGS", desc: "Sebutan kepanjangan dari Enhanced Geothermal System, yaitu rekayasa penambahan jumlah rekah pada volume batuan padat panas bumi mutlak buatan." },
+      { term: "Stimulasi Hidrolik", desc: "Memompakan berangsur-angsur secara sengaja pasokan jumlah jutaan liter fluida cairan menuju dinding keretakan di bawah batuan demi memecahkan belah area yang lebih lebar." },
+      { term: "Batuan Kering (Dry Rock)", desc: "Material vulkanik formasi primitif sedalam miliaran tahun di perut bumi yang menimbun hawa radikal namun mustahil dimanfaatkan jika belum disirami pasokan aliran sirkulasi air resapan." },
+      { term: "Permeabilitas", desc: "Kemampuan kapasitas dari material serapan formasi bebatuan geologis yang menjadi celah lewatan fluida hidro energi yang meresap alami melewatinya secara teknikal." },
+    ],
+  },
+  en: {
+    title: "Enhanced Geothermal System (EGS)",
+    heroTitle: "Mastering Subterranean Ultra-Deep Rock Limits",
+    heroDesc: "Unlocking practically limitless artificial thermal heat utilizing extremely deep rock fracturing protocols.",
+    definition:
+      "An Enhanced Geothermal System captures naturally occurring extremely hot temperatures from isolated dry subsurface rock. Unlike conventional geothermal plants which rely on naturally occurring hydrothermal steam, EGS explicitly expands geothermal resource availability globally through engineered stimulation methods like 'hydraulic stimulation'.",
+    caraKerja: {
+      text: "EGS power provides a continuous baseload resource capable of producing power at a constant stable rate continuously. Unlike natural hydrothermal systems, EGS technology is deemed feasible to implement in nearly any location worldwide, relying purely on the depth of the resource. Ideal locations generally consist of deep granite rock naturally enveloped by 3–5 kilometers of insulating sedimentary layers to minimize heat loss.",
+      extended: [
+        "The initial operational phase primarily involves ultra-deep directional drilling schematics. According to the explicitly proportioned isometric scale map, functional surface installations spanning typically 500-1000m wide connect seamlessly to dual well shafts penetrating drastically between 4000-6000m deep to reach prime thermal bedrock targets.",
+        "Unlike standard naturally occurring hydrothermal energy (which explicitly relies on shallow accessible groundwater steam aquifers), EGS operations deliberately drill directly through solid isolated geology (Impermeable Bedrock) deep toward raw magma boundaries, capturing profound absolute heat hoarded securely within dry, completely waterless rock formations.",
+        "In a standard Enhanced Geothermal System (EGS), large pristine water masses are forcefully pushed down an injection well (blue pipe) under extraordinary surface pressure precisely to artificially fracture deep hot dry rock structures (evidenced clearly by the branching gray cracking patterns). The fluid violently absorbs intense conductive thermal energy before being forcefully extracted backward up the adjoining production well (red pipe).",
+        "Conversely, the advanced Closed-Loop Geothermal Systems illustration demonstrates a totally isolated sealed variant physically employing one continuous unbroken U-shaped pipe casing. Circulating working fluids flow completely cleanly within the isolated thick pipeline without artificially fracturing or directly contacting the deep raw rock whatsoever, purely absorbing intense ambient thermal underground heat conductively like a massive pristine subterranean radiator.",
+      ],
+      img: [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/EGS_diagram.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c4/Geothermal_energy_methods.png",
+        "https://www.energy.gov/sites/default/files/2025-12/EGS%20w%20Heading.jpg",
+        "https://www.energy.gov/sites/default/files/2025-12/Closed%20Loop%20w%20Heading.jpg",
+      ],
+    },
+    pros: [
+      "Produces significantly lower carbon emissions or greenhouse gases because the explicitly heated working fluid is never exposed directly into the atmosphere.",
+      "Since most EGS infrastructure is constructed beneath the ground, land use is extraordinarily efficient and footprint is minimized.",
+      "Closed-loop EGS infrastructure does not endanger surrounding wildlife or natural ecosystems whatsoever.",
+      "Water within EGS plants is continuously recirculated indefinitely, outperforming CSP solar which requires massive water consumption without circulation.",
+      "Exceptional massive output capacity potential, reaching potentially thousands of MW while functioning continuously 24 hours a day regardless of weather conditions.",
+      "Significantly lower machine operational costs consistently post-initial installation compared to other conventional power plants.",
+    ],
+    cons: [
+      "Technically, EGS strictly requires engineers to inject extreme high-pressure water into foundational bedrock fractures, which without high-risk management can potentially trigger induced local earthquakes.",
+      'Risk of "Well Failure" specifically where high-pressure injected water dissipates or leaks incorrectly sideways within the earth\'s mantle, failing to return to production wells with sufficient volume.',
+      "Organic subterranean geological minerals can fatally mix into the circulating water volume, slowly reducing geological bedrock quality artificially over decades.",
+      "The initial installation setup exclusively requires a massive absolute allocation of preliminary water supply volume to kickstart the artificial circulatory process.",
+    ],
+    benefits: ["Exploitation can be deployed exponentially in virtually any geographic location without the restrictions of conventional volcanic geographical proximity."],
+    impacts: ["Minor daily high-frequency tremors are frequently feared by local citizens if the plant disturbs the foundational tectonic plates of isolated civil settlements."],
+    locations: [
+      { name: "United Downs Deep Geothermal Power (Redruth)", prov: "Redruth, Cornwall, UK", cap: "3 MW", lat: 50.231, lng: -5.207, status: "Active" },
+      { name: "Eden Geothermal Project (St Austell)", prov: "Eden Project, Bodelva, St Austell, Cornwall, UK", cap: "4.5 MW", lat: 50.354, lng: -4.745, status: "Active" },
+      { name: "Qiabuqia EGS Project", prov: "Gonghe County, Qinghai Province, China", cap: "1 MW", lat: 36.56, lng: 100.56, status: "Beroperasi Aktif" },
+      { name: "Vendenheim Geothermal Power Plant", prov: "Vendenheim, Grand Est, France", cap: "4.5 MW", lat: 48.667, lng: 7.747, status: "Active" },
+      { name: "Utah FORGE (EGS Research)", prov: "Milford, Utah, USA", cap: "1 MW", lat: 38.49, lng: -113.161, status: "Beroperasi Aktif" },
+      { name: "Coso EGS Pilot Project", prov: "Coso Hot Springs, California, USA", cap: "< 1 MW", lat: 36.027, lng: -117.809, status: "Beroperasi Aktif" },
+    ],
+    glossary: [
+      { term: "EGS", desc: "Enhanced Geothermal System, referring to the engineering of augmented fracture volume within absolutely artificial deep solid hot rock formations." },
+      { term: "Hydraulic Stimulation", desc: "Intentionally pumping millions of liters of fluid supply into subsurface rock fracture walls to decisively break open wider subterranean flow areas." },
+      { term: "Dry Rock", desc: "Primitive volcanic material formations deep within the earth hoarding radical heat but impossible to utilize naturally without artificially supplied permeation." },
+      { term: "Permeability", desc: "The foundational fluid capacity of interconnected geological rock matrix formations acting as technical pathways for absorbing permeating natural hydrothermal energy." },
+    ],
+  },
+};

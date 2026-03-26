@@ -1,0 +1,191 @@
+
+
+.footer-fullwidth {
+  position: relative;
+  width: 100%;
+  margin-left: calc(50% - 50vw);
+  background-color: #0b1121;
+  padding: 3rem 6% 1.5rem 6%;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
+  transition: background-color 0.8s ease;
+}
+
+.footer-fullwidth::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(118, 165, 87, 0.2) 0%, rgba(39, 115, 152, 0.2) 100%), #0f172a;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.8s ease;
+}
+
+.footer-fw-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-fw-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 450px;
+}
+
+.footer-fw-right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-fw-address h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 0.5rem 0;
+}
+
+.footer-fw-address p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-fw-sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.footer-fw-sponsors h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 1rem 0;
+}
+
+.footer-fw-logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.footer-fw-slogan {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-fw-slogan strong {
+  color: #f1f5f9;
+}
+
+.footer-fw-socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.fw-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  color: #94a3b8;
+  transition: all 0.2s;
+}
+
+.fw-social-icon:hover {
+  background: #76A557;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.sponsors-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sponsor-link {
+  display: block;
+  text-decoration: none;
+  transition: transform var(--transition-md), opacity 0.2s;
+}
+
+.sponsor-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
+
+.sponsor-img {
+  height: auto;
+}
+
+.sponsor-pln { height: 40px; }
+.sponsor-itpln { height: 55px; }
+.sponsor-Danantara { height: 75px; }
+
+.footer-fw-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+.footer-fw-bottom p {
+  margin: 0;
+  font-size: 0.83rem;
+  color: #64748b;
+}
+
+
+@media (max-width: 768px) {
+  .footer-fw-top {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-fw-brand {
+    align-items: center;
+  }
+
+  .footer-fw-sponsors {
+    align-items: center;
+  }
+  
+  .sponsors-logos {
+    justify-content: center;
+  }
+
+  .footer-fw-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.dark-body .footer-fullwidth {
+  background-color: transparent;
+}
+
+.dark-body .footer-fullwidth::before {
+  opacity: 1;
+}
