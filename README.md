@@ -1,16 +1,15 @@
 # EBeTech: Edukasi Bersama Energi Terbarukan Technology
 
-## Institusi
-[Masukkan Nama Institusi/Universitas/Sekolah Anda di sini]
+## Institusi Teknologi Perusahaan Listrik Negara
 
 ## Anggota Tim 
-- **Ketua   :** [Nama Ketua]
-- **Anggota 1:** [Nama Anggota 1] 
-- **Anggota 2:** [Nama Anggota 2]
+- **Ketua   :** farhan Alam Saputra 
+- **Anggota 1:** Rizal Wira Pambudi
+- **Anggota 2:** Ahmad Izzulkamal
 
 ## Deskripsi Karya
 
-**EBeTech** (kependekan dari *Edukasi Bersama Energi Terbarukan Technology*) merupakan sebuah inovasi *platform* edukasi digital berbasis website interaktif yang dirancang khusus sebagai wadah sentral untuk menyosialisasikan, memetakan, dan merintis pemahaman masyarakat luas terhadap pentingnya transisi energi di Indonesia.
+**EBeTech** (kependekan dari *Edukasi Bersama Energi Terbarukan Technology*) merupakan sebuah inovasi *platform* edukasi digital tentang lingkungan berbasis website interaktif yang dirancang khusus sebagai wadah sentral untuk menyosialisasikan, memetakan, dan merintis pemahaman masyarakat luas terhadap pentingnya transisi energi di Indonesia.
 
 * **Latar Belakang:** 
   Tingginya ketergantungan masyarakat dan industri terhadap bahan bakar fosil yang lambat laun memicu krisis iklim, berakar dari minimnya kesadaran kolektif serta sulitnya mengakses referensi yang mudah dipahami tentang potensi bersih Energi Baru Terbarukan (EBT) di Indonesia.
