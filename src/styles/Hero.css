@@ -1,5 +1,3 @@
-
-
 .hero-gsap {
   position: relative;
   min-height: 85vh;
@@ -7,12 +5,12 @@
   align-items: center;
   overflow: hidden;
   padding: 140px 2rem 60px;
-  background: linear-gradient(160deg, rgba(118,165,87,0.08) 0%, rgba(39,115,152,0.06) 50%, rgba(16,185,129,0.05) 100%), #f8fafc;
+  background: linear-gradient(160deg, rgba(118, 165, 87, 0.08) 0%, rgba(39, 115, 152, 0.06) 50%, rgba(16, 185, 129, 0.05) 100%), #f8fafc;
   color: #0f172a;
 }
 
 .hero-gsap--dark {
-  background: linear-gradient(160deg, rgba(118,165,87,0.12) 0%, rgba(39,115,152,0.10) 50%, rgba(16,185,129,0.08) 100%), #030712;
+  background: linear-gradient(160deg, rgba(118, 165, 87, 0.12) 0%, rgba(39, 115, 152, 0.1) 50%, rgba(16, 185, 129, 0.08) 100%), #030712;
   color: #f8fafc;
 }
 
@@ -82,7 +80,6 @@
 .hero-gsap--dark .hero-title-base {
   color: #f8fafc;
 }
-
 
 .hero-title-accent-wrapper {
   display: inline-block;
@@ -156,10 +153,9 @@
   justify-content: center;
   align-self: start;
   padding-top: 0;
-  margin: -3rem 0 0 auto; 
+  margin: -2rem 0 0 auto;
   max-width: 550px;
 }
-
 
 .energy-card {
   position: relative;
@@ -167,7 +163,7 @@
   max-width: 170px;
   cursor: grab;
   z-index: 10;
-  touch-action: none; 
+  touch-action: none;
   transform: translateZ(0);
 }
 
@@ -175,13 +171,11 @@
   cursor: grabbing;
 }
 
-
 .energy-card-parallax {
   width: 100%;
   height: 100%;
   transform: translateZ(0);
 }
-
 
 .energy-card-inner {
   width: 100%;
@@ -197,7 +191,7 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  pointer-events: none; 
+  pointer-events: none;
   transform: translateZ(0);
   backface-visibility: hidden;
 }
@@ -255,7 +249,6 @@
   background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.08), transparent 60%);
 }
 
-
 .card-solar .energy-card-inner {
   transform: rotate(-3deg);
 }
@@ -295,10 +288,10 @@
   .hero-gsap {
     min-height: 80vh;
     padding: 120px 1.5rem 2rem;
-    background: linear-gradient(160deg, rgba(118,165,87,0.08) 0%, rgba(39,115,152,0.06) 50%, rgba(16,185,129,0.05) 100%), #f8fafc;
+    background: linear-gradient(160deg, rgba(118, 165, 87, 0.08) 0%, rgba(39, 115, 152, 0.06) 50%, rgba(16, 185, 129, 0.05) 100%), #f8fafc;
   }
   .hero-gsap--dark.hero-gsap {
-    background: linear-gradient(160deg, rgba(118,165,87,0.12) 0%, rgba(39,115,152,0.10) 50%, rgba(16,185,129,0.08) 100%), #030712;
+    background: linear-gradient(160deg, rgba(118, 165, 87, 0.12) 0%, rgba(39, 115, 152, 0.1) 50%, rgba(16, 185, 129, 0.08) 100%), #030712;
   }
   .desktop-break {
     display: none;
@@ -324,7 +317,6 @@
     justify-content: center;
   }
 
-  
   .hero-gsap-visuals-grid {
     display: none;
   }
