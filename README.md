@@ -1,5 +1,5 @@
 # EBeTech: Edukasi Bersama Energi Terbarukan Technology
-## Institusi Teknologi Perusahaan Listrik Negara
+## Institut Teknologi Perusahaan Listrik Negara
 ## Anggota Tim
 
 - **Ketua :** Farhan Alam Saputra
